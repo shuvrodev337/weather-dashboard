@@ -3,3 +3,8 @@
 @tailwind utilities;
 
 
+body {
+    background: url(assets/images/bg-image.jpg) no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
