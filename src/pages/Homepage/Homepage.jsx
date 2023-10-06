@@ -1,5 +1,5 @@
 import Banner from "../../components/Banner";
-import Temperature from "../../components/Temperature";
+import WeatherCard from "../../components/WeatherCard";
 
 
 const Homepage = () => {
@@ -8,7 +8,7 @@ const Homepage = () => {
   return (
     <div>
       <Banner></Banner>
-      <Temperature></Temperature>
+      <WeatherCard></WeatherCard>
     </div>
   );
 };
