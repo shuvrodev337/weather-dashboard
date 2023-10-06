@@ -9,7 +9,7 @@ const WeatherCard = () => {
   
   const imageURL =`http://openweathermap.org/img/wn/${weatherData?.weather[0].icon}@2x.png`;
   return (
-    <div className="flex flex-col md:flex-row justify-between p-10 bg-black rounded-3xl shadow-lg w-[400px] md:w-[900px] mx-auto">
+    <div className="flex flex-col md:flex-row justify-between p-4 md:p-10 bg-black rounded-3xl shadow-lg w-[330px] md:w-[900px] mx-auto">
       <div>
         <h2 className="text-4xl font-bold mb-2 text-white">
           {weatherData?.name}, {weatherData?.sys?.country}
@@ -20,7 +20,7 @@ const WeatherCard = () => {
         </p>
       </div>
       
-        <div className="flex justify-between items-center gap-6">
+        <div className="flex justify-between items-center gap-3 md:gap-6">
           <div className="flex items-center">
           <div>
           <img src={imageURL} alt="weather-icon" className=" ml-auto" />
