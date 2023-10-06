@@ -1,13 +1,16 @@
-import React, { useContext } from 'react';
+import  { useContext } from 'react';
 import { CityContext } from '../providers/CityProvider';
 
+
 const SearchCity = () => {
-    const {city,setCity} = useContext(CityContext)
+    const {setCity} = useContext(CityContext)
 
     const handleSearch = (event) => {
         event.preventDefault();
         const searchedCity = event.target.searchedCityName.value
         setCity(searchedCity)
+        event.target.reset();
+        
       };
     return (
         <form onSubmit={handleSearch} className="flex items-center gap-2">
@@ -19,7 +22,7 @@ const SearchCity = () => {
       />
       <button
         type="submit"
-        className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-r-lg"
+        className="bg-blue-500 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded-r-lg"
       >
         Search
       </button>

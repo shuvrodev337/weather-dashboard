@@ -3,11 +3,15 @@ import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 import './index.css'
 import CityProvider from './providers/CityProvider.jsx'
+import UnitProvider from './providers/UnitProvider.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <CityProvider>
+      <UnitProvider>
+
     <App />
+      </UnitProvider>
 
     </CityProvider>
   </React.StrictMode>,
