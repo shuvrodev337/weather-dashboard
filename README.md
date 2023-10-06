@@ -8,6 +8,7 @@
 * The weather information includes temperature, weather description, humidity, wind speed, and an icon representing the weather.
 * Error alert if the city is not found or if there is an issue with the API request.
 * Toggle between Celsius and Fahrenheit for temperature display.
+* Used env variables to manage api keys and sensitive data.
 
 # Code Organization
 *  The App component contains the Homepage component. 
@@ -25,4 +26,4 @@
 
 
 ## Live Link
-Hosted in  -> [Weather DashBoard]()
+Hosted in Firebase -> [Weather DashBoard](https://weather-dashboard-29e9d.web.app/)
