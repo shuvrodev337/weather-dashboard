@@ -4,7 +4,6 @@ import { UnitContext } from '../providers/UnitProvider';
 const ToggleButton = () => {
 const  {unit,setUnit} = useContext(UnitContext)
 
-console.log(unit);
   return (
     <div className="flex items-center">
     <button

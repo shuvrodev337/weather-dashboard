@@ -13,16 +13,16 @@ const SearchCity = () => {
         
       };
     return (
-        <form onSubmit={handleSearch} className="flex items-center gap-2">
+        <form onSubmit={handleSearch} className="flex flex-col md:flex-row items-center gap-2">
       <input
         type="text"
         name='searchedCityName'
-        className="border rounded-l-lg py-2 px-4 focus:outline-none"
+        className="border rounded-lg py-2 px-4 focus:outline-none"
         placeholder="Search by city..."
       />
       <button
         type="submit"
-        className="bg-blue-500 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded-r-lg"
+        className="bg-blue-500 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded-lg"
       >
         Search
       </button>

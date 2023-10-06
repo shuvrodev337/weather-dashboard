@@ -11,12 +11,12 @@ const Temperature = () => {
   const imageURL =`http://openweathermap.org/img/wn/${weatherData?.weather[0].icon}@2x.png`;
   // console.log(imageURL);
   return (
-    <div className="flex justify-between p-4 bg-transparent rounded-lg shadow-lg w-[900px] mx-auto">
+    <div className="flex flex-col md:flex-row justify-between p-4 bg-transparent rounded-lg shadow-lg w-[400px] md:w-[900px] mx-auto">
       <div>
-        <h2 className="text-4xl font-bold mb-2 text-gray-700">
+        <h2 className="text-4xl font-bold mb-2 text-gray-900">
           {weatherData?.name}, {weatherData?.sys?.country}
         </h2>
-        <p className="text-lg font-semibold mb-2 text-gray-700">
+        <p className="text-lg font-semibold mb-2 text-gray-900">
           
           {weatherData?.weather[0].main}
         </p>
@@ -30,19 +30,19 @@ const Temperature = () => {
           </div>
           <div className="space-y-2">
           <ToggleButton></ToggleButton>
-          <h2 className="text-3xl font-semibold mb-2 text-gray-700">
+          <h2 className="text-3xl font-semibold mb-2 text-gray-900">
             {weatherData?.main.temp.toFixed(0)}<sup>{unit === 'metric'?'°C':'°F'}</sup>
           </h2>
           </div>
           </div>
           <div>
-          <p className="font-medium text-sm text-gray-700">
+          <p className="font-medium text-sm text-gray-900">
             Humidity: {weatherData?.main?.humidity}%
           </p>
-          <p className="font-medium text-sm text-gray-700">
+          <p className="font-medium text-sm text-gray-900">
             Wind Speed: {weatherData?.wind?.speed} {unit === 'metric' ?'mph':'kmh'}
           </p>
-          <p className="font-medium text-sm text-gray-700">
+          <p className="font-medium text-sm text-gray-900">
             Description: {weatherData?.weather[0].description}
           </p>
           {/* <ToggleButton></ToggleButton> */}
