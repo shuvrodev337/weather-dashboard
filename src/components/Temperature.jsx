@@ -1,10 +1,10 @@
 import useWeather from "../hooks/useWeather";
 
 const Temperature = () => {
-  const [weatherData] = useWeather();
-  console.log(weatherData);
-
-  const imageURL = `http://openweathermap.org/img/wn/${weatherData.weather[0].icon}@2x.png`;
+  const [weatherData ] = useWeather();
+// console.log(weatherData);
+  const imageURL =`http://openweathermap.org/img/wn/${weatherData?.weather[0].icon}@2x.png`;
+  // console.log(imageURL);
   return (
     <div className="flex justify-between p-4 bg-transparent rounded-lg shadow-lg w-[800px] mx-auto">
       <div>
@@ -15,7 +15,6 @@ const Temperature = () => {
           
           {weatherData?.weather[0].main}
         </p>
-        {/* <p className="text-xl font-bold mb-2 text-gray-700 text-center">{weatherData?.weather[0].main}</p> */}
       </div>
       
         <div className="flex justify-between items-center gap-3">

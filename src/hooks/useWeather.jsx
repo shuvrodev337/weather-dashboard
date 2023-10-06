@@ -2,17 +2,20 @@ import { useEffect, useState } from 'react';
 const api_key = import.meta.env.VITE_API_KEY;
 
 const useWeather = () => {
-    const city = 'Dhaka';
+    const city = 'dhaka';
     const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${api_key}&units=metric`;
 
-const [weatherData,setWeatherData] = useState([])
+const [weatherData,setWeatherData] = useState() 
 useEffect(()=>{
     fetch(url)
         .then(res => res.json())
-        .then(data => setWeatherData(data));
+        .then(data => {
+            // console.log(data);
+            setWeatherData(data)
+        });
 },[url])
 
-return [weatherData]
+return [weatherData] 
 };
 
 export default useWeather;
