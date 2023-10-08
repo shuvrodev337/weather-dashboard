@@ -22,8 +22,9 @@
 * The 'city' state can be changed in the SearchCity component.
 * The 'unit' state can be toggled in the ToggleButton component.
 
-
-
+# To run the application on local setup, clone the repo and then run this below command- 
+  1. npm install
+  2. npm run dev
 
 ## Live Link
 Hosted in Firebase -> [Weather DashBoard](https://weather-dashboard-29e9d.web.app/)
